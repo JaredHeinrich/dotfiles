@@ -117,6 +117,10 @@ return {
         { "<leader>fc", function() Snacks.picker.colorschemes() end, desc = "Colorschems" },
         { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification history" },
 
+        -- ─── LSP ──────────────────────────────────────────────────────────
+        { "gd", function() Snacks.picker.lsp_definitions() end, desc = "[G]oto [D]efinition" },
+        { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "[G]oto References" },
+
         -- ─── Git ──────────────────────────────────────────────────────────
         { "<leader>gg", function() Snacks.lazygit() end, desc = "LazyGit" },
         { "<leader>gl", function() Snacks.lazygit.log() end, desc = "Git log (lazygit)" },
