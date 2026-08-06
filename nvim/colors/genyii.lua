@@ -91,7 +91,7 @@ local highlights = {
     TabLine = { bg = colors.black, fg = colors.white }, -- tab pages line, not active tab page label
     TabLineFill = { bg = colors.black }, -- tab pages line, where there are no labels
     TabLineSel = { fg = colors.black, bg = colors.cyan }, -- tab pages line, active tab page label
-    Title = { fg = colors.dark_blue, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
+    Title = { fg = colors.orange, bold = true }, -- titles for output from ":set all", ":autocmd" etc.
     Visual = { bg = colors.bg_highlight }, -- Visual mode selection
     VisualNOS = { bg = colors.bg_highlight }, -- Visual mode selection when vim is "Not Owning the Selection".
     WarningMsg = { fg = colors.yellow }, -- warning messages
