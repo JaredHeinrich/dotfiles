@@ -15,16 +15,6 @@ vim.keymap.set("n", "<C-Down>",  "<cmd>resize -2<CR>",          { desc = "Decrea
 vim.keymap.set("n", "<C-Left>",  "<cmd>vertical resize -2<CR>", { desc = "Decrease width" })
 vim.keymap.set("n", "<C-Right>", "<cmd>vertical resize +2<CR>", { desc = "Increase width" })
 
-vim.keymap.set("n", "º", ":m .+1<CR>==", { desc = "Move line down mac" }) -- alt-j
-vim.keymap.set("n", "∆", ":m .-2<CR>==", { desc = "Move line up mac" }) -- alt-k
-vim.keymap.set("v", "º", ":m '>+1<CR>gv=gv", { desc = "Move selection down mac" }) -- alt-j
-vim.keymap.set("v", "∆", ":m '<-2<CR>gv=gv", { desc = "Move selection up mac" }) -- alt-k
-
-vim.keymap.set("n", "<C-j>", ":m .+1<CR>==", { desc = "Move line down" }) -- alt-j
-vim.keymap.set("n", "<C-k>", ":m .-2<CR>==", { desc = "Move line up" }) -- alt-k
-vim.keymap.set("v", "<C-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" }) -- alt-j
-vim.keymap.set("v", "<C-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" }) -- alt-k
-
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 
