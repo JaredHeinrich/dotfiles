@@ -1,0 +1,121 @@
+config_version = 14
+
+[bar]
+order = [ "default" ]
+
+[bar.default]
+enabled = true
+start = [
+    "session",
+    "workspaces",
+    "taskbar"
+]
+center = []
+end = [
+    "media",
+    "wallpaper",
+    "tray",
+    "notifications",
+    "clipboard",
+    "network",
+    "bluetooth",
+    "volume",
+    "brightness",
+    "clock"
+]
+margin_ends = 0
+radius = 0
+
+[control_center]
+hidden_tabs = [ "weather" ]
+
+[dock]
+enabled = false
+background_opacity = 1.0
+cross_axis_padding = 5
+icon_size = 30
+item_spacing = 5
+main_axis_padding = 10
+margin_edge = 5
+
+[lockscreen]
+enabled = false
+fingerprint = false
+lock_before_suspend = false
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+
+[lockscreen_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+
+[shell.panel]
+open_near_click_session = true
+session_placement = "floating"
+
+[shell.session]
+grid = true
+grid_columns = 1
+show_shortcuts = false
+
+[[shell.session.actions]]
+action = "lock"
+countdown_seconds = 0.0
+enabled = false
+variant = "default"
+
+[[shell.session.actions]]
+action = "logout"
+countdown_seconds = 30.0
+enabled = true
+variant = "default"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+countdown_seconds = 0.0
+enabled = false
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+countdown_seconds = 30.0
+enabled = true
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+countdown_seconds = 30.0
+enabled = true
+variant = "primary"
+
+[theme]
+builtin = "Rosé Pine"
+wallpaper_scheme = "soft"
+
+[theme.templates]
+enable_builtin_templates = false
+enable_community_templates = false
+
+[wallpaper]
+directory = "~/wallpaper"
+transition = [ "honeycomb" ]
+
+[wallpaper.default]
+path = "~/wallpaper/violett_evergarden.png"
+
+[widget.active_window]
+max_length = 228
+title_scroll = "on_hover"
+
+[widget.media]
+album_art_only = true
+
+[widget.workspaces]
+capsule_radius = "auto"
+interactive = false
+pill_scale = 0.75
+show_labels = false

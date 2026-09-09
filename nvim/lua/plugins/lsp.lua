@@ -18,10 +18,11 @@ return {
 
             vim.lsp.enable({
                 "lua_ls",
+                "rust_analyzer",
+                "clangd",
                 "ltex_plus",
                 "tinymist",
-                "basedpyright",
-                "rust_analyzer",
+                "pyright",
                 "vtsls",
                 "jdtls",
                 "svelte",
@@ -30,7 +31,6 @@ return {
                 "yamlls",
                 "bashls",
                 "dockerls",
-                "clangd",
             })
 
             -- Diagnostics global config
